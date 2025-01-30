@@ -1,0 +1,110 @@
+.footer {
+    background-color: #000;
+    border-top: 2px solid goldenrod;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .payment-methods h3 {
+    margin-bottom: 10px;
+  }
+  
+  .payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .payment-icons img {
+    width: 90px;
+    height: auto;
+  }
+  
+  .useful-links {
+    margin-top: 20px;
+  }
+  
+  .useful-links h3 {
+    margin-bottom: 10px;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .links a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    font-weight: bold;
+    margin-top: 10px;
+    border-top: 2px solid gold;
+    font-size: 14px;
+  }
+  .footer-bottom a {
+    color: gold;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .payment-icons img {
+      width: 50px;
+    }
+  
+    .links {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .social-icons {
+      gap: 10px;
+    }
+  
+    .payment-icons img {
+      width: 40px;
+    }
+  
+    .footer {
+      padding: 15px;
+    }
+  }
+  
