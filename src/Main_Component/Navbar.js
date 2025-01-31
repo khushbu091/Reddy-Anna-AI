@@ -21,7 +21,7 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="home">Reddy Anna</Link></li>
         <li><Link to="reddyNews">Reddy Anna News</Link></li>
-        <li><a href="#">Cricket Live Score</a></li>
+        <li><Link to="cricketLive">Cricket Live Score</Link></li>
         <li><Link to="privacyPolicy">Privacy Policy</Link></li>
         
       </ul>

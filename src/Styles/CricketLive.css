@@ -1,0 +1,60 @@
+
+  
+  .Crickrt-live-container {
+    max-width: 1000px;
+    margin: auto;
+    height: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .league-section {
+    margin-bottom: 20px;
+  }
+  
+  .league-title {
+    background: #28a745;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .match-result {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .match-time {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .match-teams {
+    text-align: center;
+    color: #666;
+  }
+  
+  .match-score {
+    text-align: right;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  @media (max-width: 600px) {
+    .match-result {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .match-time, .match-teams, .match-score {
+      margin-bottom: 5px;
+    }
+  }
