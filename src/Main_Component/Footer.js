@@ -1,5 +1,7 @@
 import React from "react";
 import "../Styles/Footer.css";
+import { useState, useEffect } from "react";
+
 import Googlepy from "../Image/Gpay-1-1.webp"
 import PhonePe from "../Image/Phone-1.webp"
 import UPI from "../Image/UPI-1-1.webp"
@@ -12,6 +14,17 @@ import instagram from "../Image/instagram.png";
 import share from "../Image/bc0-150x150.png";
 
 const Footer = () => {
+
+  const [isUp, setIsUp] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsUp((prev) => !prev);
+    }, 1000); // Toggle every 1 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <footer className="footer">
       {/* Social Media Links */}
@@ -52,14 +65,16 @@ const Footer = () => {
           <a href="/news">Reddy Anna News</a>
           <a href="/live-score">Cricket Live Score</a>
           <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/apps-most-visited">Apps más vistas</a>
-          <a href="/apps-highly-rated">Apps más calificadas</a>
         </div>
       </div>
       <div className="footer-bottom">
         <p>
         Copyright © 2025 <a>Reddy Anna </a>| Powered by [Reddy Anna Official]
         </p>
+      </div>
+{/* -------------------- sticky content ------------------------------------- */}
+      <div className={`stickyfooter ${isUp ? "move-up" : "move-down"}`}>
+      Reddy Anna Login
       </div>
     </footer>
     

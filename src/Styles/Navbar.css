@@ -21,26 +21,34 @@
 }
 
 .nav-links li {
-  font-size: 16px;
+  font-size: 18px;
 }
+
 
 .nav-links a {
   text-decoration: none;
-  color: yellow;
+  color: goldenrod;
   font-weight: bold;
 }
-
+.nav-links a:hover {
+  color: gold;
+}
 /* Login Button */
 .login-btn {
+  max-width: 120px;
   background: linear-gradient(to right, gold, goldenrod);
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 }
-
+.login-btn:hover{
+    /* background-color:goldenrod; */
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 25px goldenrod;
+}
 /* Mobile Menu Icon */
 .menu-icon {
   display: none;
