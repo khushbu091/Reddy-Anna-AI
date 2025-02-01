@@ -10,7 +10,9 @@
 
 /* Logo */
 .logo img {
-  height: 50px;
+  width: 120px;
+  height: 70px;
+  padding-left: 20px;
 }
 
 /* Navigation links */
@@ -21,7 +23,7 @@
 }
 
 .nav-links li {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 

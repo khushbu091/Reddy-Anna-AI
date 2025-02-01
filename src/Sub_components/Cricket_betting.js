@@ -10,7 +10,7 @@ const CricketBetting=()=>{
             { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
             { text: "Casino Games", link: "casinoGames" },
             { text: "Cricket Betting", link: "cricketBetting" },
-            { text: "Online Betting", link: "cricketBetting" },
+            { text: "Online Betting", link: "online_betting" },
             { text: "Reddy Anna Book", link: "reddyNews" }
           ],
           author: "Reddy Anna",

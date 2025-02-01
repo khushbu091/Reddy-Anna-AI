@@ -1,7 +1,7 @@
 
 
 
-const CasinoGames=()=>{
+const OnlineBetting=()=>{
     const posts = [
         {
           title: "How to Place Bets on Reddy Anna Book: Bet on 1000+ Games and Live Cricket Matches",
@@ -23,7 +23,7 @@ const CasinoGames=()=>{
         <>
         <div className="container">
         <div className="blog-container">
-        <h1 className="home-title">Casino Games </h1>
+        <h1 className="home-title"> Online Betting  </h1>
 
           <div className="blog-grid">
             {posts.map((post, index) => (
@@ -47,4 +47,4 @@ const CasinoGames=()=>{
         </>
     );
 };
-export default CasinoGames;
+export default OnlineBetting;

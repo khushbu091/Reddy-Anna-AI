@@ -8,6 +8,7 @@ import Betting_Tips from "./Sub_components/Betting_tips";
 import Betting_Tips_Tricks from "./Sub_components/TipsTricks";
 import CasinoGames from "./Sub_components/CasinoGames";
 import CricketBetting from "./Sub_components/Cricket_betting";
+import OnlineBetting from "./Sub_components/Online_betting";
 
 
 const App =()=>{
@@ -26,6 +27,8 @@ const App =()=>{
               <Route path="Tips&Tricks" element={<Betting_Tips_Tricks/>}/>
               <Route path="casinoGames" element={<CasinoGames/>}/>
               <Route path="cricketBetting" element={<CricketBetting/>}/>
+              <Route path="online_betting" element={<OnlineBetting/>}/>
+
 
 
 
