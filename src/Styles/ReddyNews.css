@@ -6,6 +6,7 @@
     background-color: black;
     color: white;
     padding: 20px;
+    padding-left: 20px;
   }
   
   .blog-grid {
@@ -35,7 +36,7 @@
   }
   
   .title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 5px;
   }

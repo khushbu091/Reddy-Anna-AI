@@ -61,10 +61,10 @@ const Footer = () => {
       <div className="useful-links">
         <h3>Useful Links</h3>
         <div className="links">
-          <a href="/reddy-anna">Reddy Anna</a>
-          <a href="/news">Reddy Anna News</a>
-          <a href="/live-score">Cricket Live Score</a>
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="home">Reddy Anna</a>
+          <a href="reddyNews">Reddy Anna News</a>
+          <a href="cricketLive">Cricket Live Score</a>
+          <a href="privacyPolicy">Privacy Policy</a>
         </div>
       </div>
       <div className="footer-bottom">

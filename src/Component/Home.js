@@ -15,7 +15,7 @@ const Home =()=>{
                 <img src={home_img} alt="Cricket players" className="hero-image" />
             </div>
             <div className="welcome-content">
-            <h1 className="title">
+            <h1 className="home-title">
               Welcome to Reddy Anna Book – Trusted by Over <span className="highlight">55,000+ Users</span>
             </h1>
             <h2 className="subtitle">Why Choose Reddy Anna Book?</h2>
@@ -44,7 +44,7 @@ const Home =()=>{
 
       {/* ---------------------------- second section ------------------------------------- */}
       <div className="reddy-anna-section">
-        <h1 className="title">
+        <h1 className="home-title">
           How to Obtain Your Cricket ID Instantly with Reddy Anna?        
         </h1>
         <img src={logoImg} alt="Reddy Anna Book" className="reddy-anna-img" />
@@ -109,7 +109,7 @@ const Home =()=>{
           <center> <img src={apk_img} alt="Reddy Anna " className="hero-image" /></center>
         </div>
         <center>
-        <h1 className="title">
+        <h1 className="home-title">
           What Makes Reddy Anna Book Unique?
         </h1>
         </center>
@@ -165,7 +165,7 @@ const Home =()=>{
     {/* --------------------------- six section -------------------------------------------- */}
       <div className=" six-sec-container">
         <center>
-          <h1 className="title">
+          <h1 className="home-title">
           Top Features of Reddy Anna Book        
         </h1>
         <ul>
@@ -181,7 +181,7 @@ const Home =()=>{
 
 {/* ----------------------------- seven section ------------------------------------------ */}
       <div className="seven-sec-container">
-      <h1 className="title">Get in Touch with Reddy Anna Book</h1>
+      <h1 className="home-title">Get in Touch with Reddy Anna Book</h1>
       <p className="sec-description">
         Need help or have questions? Reddy Anna Book provides multiple ways to
         connect with us:
@@ -204,7 +204,7 @@ const Home =()=>{
       </div>
 {/* ---------------------------- testimonial part ----------------------------------- */}
       <div className="testimonials-container">
-      <h1 className="title">User Testimonials</h1>
+      <h1 className="home-title">User Testimonials</h1>
       <span className="trophy">🏆</span>
       <div className="testimonial">
         <strong>Akhil, Hyderabad</strong>
@@ -222,7 +222,7 @@ const Home =()=>{
 
    {/* ---------------------------------------- nine section ---------------------------------  */}
    <div className="seven-sec-container">
-      <h1 className="title">Join Reddy Anna Book Today!</h1>
+      <h1 className="home-title">Join Reddy Anna Book Today!</h1>
       <p className="sec-description">
       Ready to experience the best cricket betting platform?
       </p>
@@ -237,7 +237,7 @@ const Home =()=>{
     </div>
 {/* -------------------------------- FAQ section ----------------------------------------------- */}
     <div className="faq-container">
-      <center><h1 className="title">FAQs About Reddy Anna Book</h1></center>
+      <center><h1 className="home-title">FAQs About Reddy Anna Book</h1></center>
       
       <div className="faq-item">
         <h3>1. What is Reddy Anna Book?</h3>

@@ -1,6 +1,6 @@
 import "../Styles/ReddyNews.css";
 import DefaultImage from "../Image/reddy-anna-logo.png";
-const Reddy_News = () => {
+const Betting_Tips_Tricks = () => {
     const posts = [
         {
           title: "How to Place Bets on Reddy Anna Book: Bet on 1000+ Games and Live Cricket Matches",
@@ -20,13 +20,13 @@ const Reddy_News = () => {
           title: "ReddyAnna Book: The Ultimate Guide to Online Cricket Betting, Tips, and Bonuses",
           category: [
             { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Legal and Safety", link: "#" },
+            { text: "Legal and Safety", link: "" },
             { text: "Live Matches", link: "cricketLive" },
             { text: "Offers and Bonuses", link: "#" },
             { text: "Online Platforms", link: "#" },
             { text: "Promotions", link: "#" },
             { text: "Reddy Anna Book", link: "reddyNews" },
-            { text: "ReddyAnna", link: "reddyNews" },
+            { text: "ReddyAnna", link: "bettingTips" },
             { text: "Sports", link: "#" }
           ],
           author: "Reddy Anna",
@@ -81,6 +81,8 @@ const Reddy_News = () => {
       return (
         <div className="container">
         <div className="blog-container">
+        <h1 className="home-title">Betting Tips And Tricks </h1>
+  
           <div className="blog-grid">
             {posts.map((post, index) => (
               <div key={index} className="blog-post">
@@ -104,4 +106,4 @@ const Reddy_News = () => {
   );
 };
 
-export default Reddy_News;
+export default Betting_Tips_Tricks;
