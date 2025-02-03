@@ -20,14 +20,14 @@ const Reddy_News = () => {
           title: "ReddyAnna Book: The Ultimate Guide to Online Cricket Betting, Tips, and Bonuses",
           category: [
             { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Legal and Safety", link: "#" },
-            { text: "Live Matches", link: "cricketLive" },
-            { text: "Offers and Bonuses", link: "#" },
-            { text: "Online Platforms", link: "#" },
-            { text: "Promotions", link: "#" },
+            { text: "Legal and Safety", link: "legal&safety" },
+            { text: "Live Matches", link: "liveMatch" },
+            { text: "Offers and Bonuses", link: "offer&bonus" },
+            { text: "Online Platforms", link: "onlinePlatform" },
+            { text: "Promotions", link: "promotions" },
             { text: "Reddy Anna Book", link: "reddyNews" },
             { text: "ReddyAnna", link: "reddyNews" },
-            { text: "Sports", link: "#" }
+            { text: "Sports", link: "sport" }
           ],
           author: "Reddy Anna",
           date: "November 30, 2024",
@@ -37,8 +37,8 @@ const Reddy_News = () => {
           title: "Reddy Anna Online Book ID with 200% Welcome Bonus – Your Ultimate Cricket Betting Experience",
           category: [
             { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Offers and Bonuses", link: "#" },
-            { text: "Online Platforms", link: "#" }
+            { text: "Offers and Bonuses", link: "offer&bonus" },
+            { text: "Online Platforms", link: "onlinePlatform" }
           ],
           author: "Reddy Anna",
           date: "November 30, 2024",
@@ -48,13 +48,13 @@ const Reddy_News = () => {
             title: "Reddy Anna: The Best ID Service Provider in India – Get India’s Genuine Cricket ID",
             category: [
               { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-              { text: "Legal and Safety", link: "#" },
-              { text: " Live Matches", link: "cricketLive" },
-              { text: " Offers and Bonuses", link: "#" },
-              { text: " Online Platforms", link: "#" },
+              { text: "Legal and Safety", link: "legal&safety" },
+              { text: " Live Matches", link: "liveMatch" },
+              { text: " Offers and Bonuses", link: "offer&bonus" },
+              { text: " Online Platforms", link: "onlinePlatform" },
               { text: " Reddy Anna Book", link: "reddyNews" },
               { text: " Reddy Anna", link: "reddyNews" },
-              { text: "Sports", link: "#" }
+              { text: "Sports", link: "sport" }
             ],
             author: "Reddy Anna",
             date: "November 30, 2024",
@@ -64,13 +64,13 @@ const Reddy_News = () => {
             title: "Reddy Anna Book Official: Get Your Cricket ID",
             category: [
               { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-              { text: "Legal and Safety", link: "#" },
-              { text: " Live Matches", link: "cricketLive" },
-              { text: " Offers and Bonuses", link: "#" },
-              { text: " Online Platforms", link: "#" },
+              { text: "Legal and Safety", link: "legal&safety" },
+              { text: " Live Matches", link: "liveMatch" },
+              { text: " Offers and Bonuses", link: "offer&bonus" },
+              { text: " Online Platforms", link: "onlinePlatform" },
               { text: " Reddy Anna Book", link: "reddyNews" },
-              { text: " Promotions", link: "#" },
-              { text: "Sports", link: "#" }
+              { text: " Promotions", link: "promotions" },
+              { text: "Sports", link: "sport" }
             ],
             author: "Reddy Anna",
             date: " October 9, 2024",

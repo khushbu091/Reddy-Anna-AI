@@ -9,6 +9,12 @@ import Betting_Tips_Tricks from "./Sub_components/TipsTricks";
 import CasinoGames from "./Sub_components/CasinoGames";
 import CricketBetting from "./Sub_components/Cricket_betting";
 import OnlineBetting from "./Sub_components/Online_betting";
+import LegalAndSafety from "./Sub_components/Legal&safety";
+import LiveMatch from "./Sub_components/LiveMatch";
+import OfferAndBonus from "./Sub_components/Offer&bonus";
+import OnlinePlatforms from "./Sub_components/OnlinePlatforms";
+import Promotions from "./Sub_components/Promotions";
+import Sports from "./Sub_components/Sport";
 
 
 const App =()=>{
@@ -28,6 +34,18 @@ const App =()=>{
               <Route path="casinoGames" element={<CasinoGames/>}/>
               <Route path="cricketBetting" element={<CricketBetting/>}/>
               <Route path="online_betting" element={<OnlineBetting/>}/>
+              <Route path="legal&safety" element={<LegalAndSafety/>}/>
+              <Route path="liveMatch" element={<LiveMatch/>}/>
+              <Route path="offer&bonus" element={<OfferAndBonus/>}/>
+              <Route path="onlinePlatform" element={<OnlinePlatforms/>}/>
+              <Route path="promotions" element={<Promotions/>}/>
+              <Route path="sport" element={<Sports/>}/>
+
+
+
+
+
+
 
 
 
