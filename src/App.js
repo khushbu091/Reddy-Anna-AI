@@ -1,4 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import Layout from "./Main_Component/Layout";
 import Home from "./Component/Home";
 import Privacy_Policy from "./Component/Privacy_policy";

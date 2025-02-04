@@ -1,6 +1,6 @@
 .social-share {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 20%;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@
   .twitter { background: #1da1f2; }
   .telegram { background: #0088cc; }
   .whatsapp { background: #25d366; }
+  .instragram { background: #e31da1; }
   
   .social-share a:hover {
     opacity: 0.8;
@@ -34,10 +35,10 @@
   /* Media Query for Smaller Screens */
   @media (max-width: 768px) {
     .social-share {
-      left: 5px;
+      right: 0;
       width: 40px;
       height: 40;
-      margin-right: 15px;
+      
     }
   }
   

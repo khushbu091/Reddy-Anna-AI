@@ -1,14 +1,58 @@
 import "../Styles/Home.css";
+import Slider from 'react-slick';
+
+import ss1 from "../Image/ss1.png";
+import s2 from "../Image/ss2.png";
+import s3 from "../Image/ss3.png";
+import s4 from "../Image/ss4.png";
+import s5 from "../Image/s5.png";
+
 import home_img from "../Image/homeImg.png";
 import logoImg from "../Image/reddy-anna-logo.png";
-import refer_img from "../Image/refer.png"
-import apk_img from "../Image/reddy-anna-apk.png"
-import so_img from "../Image/s0.png"
+import refer_img from "../Image/refer.png";
+import apk_img from "../Image/reddy-anna-apk.png";
+import so_img from "../Image/s0.png";
+
+
 const Home =()=>{
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+  };
+  
     return(
         <>
         
       <div className="container">
+      
+      <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <img src={ss1} alt="Slide 1" className="slider-image" />
+        </div>
+        <div>
+          <img src={s2} alt="Slide 2" className="slider-image" />
+        </div>
+        <div>
+          <img src={s3} alt="Slide 3" className="slider-image" />
+        </div>
+        <div>
+          <img src={s4} alt="Slide 4" className="slider-image" />
+        </div>
+
+        <div>
+          <img src={s5} alt="Slide 5" className="slider-image" />
+        </div>
+      </Slider>
+    </div>
+
+     
         {/* ---------------------- welcome section --------------------------- */}
         <div className="welcome-container">
             <div className="welcome-img">
@@ -207,15 +251,32 @@ const Home =()=>{
       <h1 className="home-title">User Testimonials</h1>
       <span className="trophy">🏆</span>
       <div className="testimonial">
-        <strong>Akhil, Hyderabad</strong>
-        <p className="">
+        <strong>Aman, Hyderabad</strong>
+        <p>
           "I've been using Reddy Anna Book for months now, and I love how secure and easy it is to place bets. The 24-hour withdrawal feature is a game-changer!"
         </p>
       </div>
       <div className="testimonial">
-        <strong>Priya, Bangalore</strong>
+        <strong>Nancy, Bangalore</strong>
         <p>
           "Their customer support is always available and super helpful. Reddy Anna Book is the most genuine platform I've ever used!"
+        </p>
+      </div>
+      <div className="testimonial">
+        <strong>Shiv, Pune</strong>
+        <p>
+          " Reddy Anna Book is the most genuine platform I've ever used!"
+        </p>
+      </div>
+      <div className="testimonial">
+        <strong>Priyansh, Noida</strong>
+        <p>
+        "I love how secure and easy it is to place bets. The 24-hour withdrawal feature is a game-changer!"        </p>
+      </div>
+      <div className="testimonial">
+        <strong>Suraj, Jharkhand</strong>
+        <p>
+        "Their customer support is always available and super helpful."
         </p>
       </div>
     </div>
