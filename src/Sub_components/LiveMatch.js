@@ -6,12 +6,12 @@ const LiveMatch =()=>{
         {
           title: "How to Place Bets on Reddy Anna Book: Bet on 1000+ Games and Live Cricket Matches",
           category: [
-            { text: "Betting Tips", link: "bettingTips" },
-            { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Casino Games", link: "casinoGames" },
-            { text: "Cricket Betting", link: "cricketBetting" },
-            { text: "Online Betting", link: "online_betting" },
-            { text: "Reddy Anna Book", link: "reddyNews" }
+            { text: "#Betting Tips", link: "bettingTips" },
+            { text: "#Betting Tips and Tricks", link: "Tips&Tricks" },
+            { text: "#Casino Games", link: "casinoGames" },
+            { text: "#Cricket Betting", link: "cricketBetting" },
+            { text: "#Online Betting", link: "online_betting" },
+            { text: "#Reddy Anna Book", link: "reddyNews" }
           ],
           author: "Reddy Anna",
           date: "November 30, 2024",
@@ -20,15 +20,15 @@ const LiveMatch =()=>{
         {
           title: "ReddyAnna Book: The Ultimate Guide to Online Cricket Betting, Tips, and Bonuses",
           category: [
-            { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Legal and Safety", link: "legal&safety" },
-            { text: "Live Matches", link: "liveMatch" },
-            { text: "Offers and Bonuses", link: "offer&bonus" },
-            { text: "Online Platforms", link: "onlinePlatform" },
-            { text: "Promotions", link: "promotions" },
-            { text: "Reddy Anna Book", link: "reddyNews" },
-            { text: "ReddyAnna", link: "reddyNews" },
-            { text: "Sports", link: "sport" }
+            { text: "#Betting Tips and Tricks", link: "Tips&Tricks" },
+            { text: "#Legal and Safety", link: "legal&safety" },
+            { text: "#Live Matches", link: "liveMatch" },
+            { text: "#Offers and Bonuses", link: "offer&bonus" },
+            { text: "#Online Platforms", link: "onlinePlatform" },
+            { text: "#Promotions", link: "promotions" },
+            { text: "#Reddy Anna Book", link: "reddyNews" },
+            { text: "#ReddyAnna", link: "reddyNews" },
+            { text: "#Sports", link: "sport" }
           ],
           author: "Reddy Anna",
           date: "November 30, 2024",
@@ -37,9 +37,9 @@ const LiveMatch =()=>{
         {
           title: "Reddy Anna Online Book ID with 200% Welcome Bonus – Your Ultimate Cricket Betting Experience",
           category: [
-            { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Offers and Bonuses", link: "offer&bonus" },
-            { text: "Online Platforms", link: "onlinePlatform" }
+            { text: "#Betting Tips and Tricks", link: "Tips&Tricks" },
+            { text: "#Offers and Bonuses", link: "offer&bonus" },
+            { text: "#Online Platforms", link: "onlinePlatform" }
           ],
           author: "Reddy Anna",
           date: "November 30, 2024",

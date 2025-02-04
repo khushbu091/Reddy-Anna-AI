@@ -6,12 +6,12 @@ const Betting_Tips=()=>{
         {
           title: "How to Place Bets on Reddy Anna Book: Bet on 1000+ Games and Live Cricket Matches",
           category: [
-            { text: "Betting Tips", link: "bettingTips" },
-            { text: "Betting Tips and Tricks", link: "Tips&Tricks" },
-            { text: "Casino Games", link: "casinoGames" },
-            { text: "Cricket Betting", link: "cricketBetting" },
-            { text: "Online Betting", link: "online_betting" },
-            { text: "Reddy Anna Book", link: "reddyNews" }
+            { text: "#Betting Tips", link: "bettingTips" },
+            { text: "#Betting Tips and Tricks", link: "Tips&Tricks" },
+            { text: "#Casino Games", link: "casinoGames" },
+            { text: "#Cricket Betting", link: "cricketBetting" },
+            { text: "#Online Betting", link: "online_betting" },
+            { text: "#Reddy Anna Book", link: "reddyNews" }
           ],
           author: "Reddy Anna",
           date: "November 30, 2024",
