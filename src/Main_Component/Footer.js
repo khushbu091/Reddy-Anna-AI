@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="links">
           <a href="home">Reddy Anna</a>
           <a href="reddyNews">Reddy Anna News</a>
-          <a href="cricketLive">Cricket Live Score</a>
+          <a href="upcomingEvent">Upcoming Event</a>
           <a href="privacyPolicy">Privacy Policy</a>
         </div>
       </div>

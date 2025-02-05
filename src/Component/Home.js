@@ -60,7 +60,7 @@ const Home =()=>{
             </div>
             <div className="welcome-content">
             <h1 className="home-title">
-              Welcome to Reddy Anna Book – Trusted by Over <span className="highlight">55,000+ Users</span>
+              Welcome to Reddy Anna Book – Trusted by Over <span className="highlight">555,000+ Users</span>
             </h1>
             <h2 className="subtitle">Why Choose Reddy Anna Book?</h2>
             <p className="description">

@@ -19,6 +19,10 @@ import OfferAndBonus from "./Sub_components/Offer&bonus";
 import OnlinePlatforms from "./Sub_components/OnlinePlatforms";
 import Promotions from "./Sub_components/Promotions";
 import Sports from "./Sub_components/Sport";
+// ---------------------- Admin Pannel Data-----------------------------
+import AdminDashboard from "./AdminPannel/AdminDashboard";
+import Login from "./AdminPannel/Login";
+import ProtectedRoute from "./AdminPannel/ProtectedRoute";
 
 
 const App =()=>{
@@ -44,18 +48,16 @@ const App =()=>{
               <Route path="onlinePlatform" element={<OnlinePlatforms/>}/>
               <Route path="promotions" element={<Promotions/>}/>
               <Route path="sport" element={<Sports/>}/>
+{/* -------------------------Admin Data -------------------------------- */}
 
-
-
-
-
-
-
-
-
-
-
-              </Route>
+              <Route path="/login" element={<Login />} />
+              <Route path="/admin" element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>}/>
+     
+          
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -1,18 +1,21 @@
-import {Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import SocialShare from "./SocialShare";
+
 const Layout = () => {
-    
-     return (
+    const location = useLocation();
+    const hideNavAndFooter = location.pathname === "/login" || location.pathname === "/admin"; 
+
+
+    return (
         <>
-            <Navbar/>
-            <SocialShare/>
+            {!hideNavAndFooter && <Navbar />}
+            {!hideNavAndFooter && <SocialShare />}
             <Outlet />
-            <Footer/>
-            
-           
+            {!hideNavAndFooter && <Footer />}
         </>
     );
 }
+
 export default Layout;
