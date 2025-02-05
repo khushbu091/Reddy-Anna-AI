@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">
+      <Link to="home"><div className="logo">
         <img src={logo} alt="Logo" />
-      </div>
+      </div></Link>
 
       
 
@@ -21,7 +21,7 @@ const Navbar = () => {
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="home">Reddy Anna</Link></li>
         <li><Link to="reddyNews">Reddy Anna News</Link></li>
-        <li><Link to="cricketLive">Cricket Live Score</Link></li>
+        <li><Link to="upcomingEvent">Upcoming Event</Link></li>
         <li><Link to="privacyPolicy">Privacy Policy</Link></li>
         
       </ul>

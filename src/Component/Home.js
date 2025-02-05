@@ -1,11 +1,11 @@
 import "../Styles/Home.css";
 import Slider from 'react-slick';
 
-import ss1 from "../Image/ss1.png";
-import s2 from "../Image/ss2.png";
-import s3 from "../Image/ss3.png";
-import s4 from "../Image/ss4.png";
-import s5 from "../Image/s5.png";
+import ss1 from "../Image/up1.jpg";
+import s2 from "../Image/up2.avif";
+import s3 from "../Image/b8.avif";
+import s4 from "../Image/b1.jpg";
+import s5 from "../Image/b6.jpg";
 
 import home_img from "../Image/homeImg.png";
 import logoImg from "../Image/reddy-anna-logo.png";
