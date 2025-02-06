@@ -23,6 +23,7 @@ import Sports from "./Sub_components/Sport";
 import AdminDashboard from "./AdminPannel/AdminDashboard";
 import Login from "./AdminPannel/Login";
 import ProtectedRoute from "./AdminPannel/ProtectedRoute";
+import CardForm from "./AdminPannel/CardForm";
 
 
 const App =()=>{
@@ -55,7 +56,8 @@ const App =()=>{
               <ProtectedRoute>
                 <AdminDashboard />
               </ProtectedRoute>}/>
-     
+              <Route path="/cardForm" element={<CardForm />} />
+
           
           </Route>
         </Routes>

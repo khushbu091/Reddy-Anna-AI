@@ -119,8 +119,8 @@ const Home =()=>{
       <div className="refer-img">
         <center> <img src={refer_img} alt="Cricket players" className="hero-image" /></center>
       </div>
-      <div className="cart-container">
-      <div className="card">
+      <div className="home-cart-container">
+      <div className="home-card">
         <h2>How to Add Funds to Your Reddy Anna Account for Betting Purposes?</h2>
         <p className="sec-description">Adding funds to your Reddy Anna account is safe and straightforward:</p>
         <ul>
@@ -133,7 +133,7 @@ const Home =()=>{
         </ul>
         <button className="btn">Reddy Anna Book</button>
       </div>
-      <div className="card">
+      <div className="home-card">
         <h2>How to Withdraw Cash From Reddy Anna?</h2>
         <p className="sec-description">Withdrawing your earnings is quick and simple:</p>
         <ol>

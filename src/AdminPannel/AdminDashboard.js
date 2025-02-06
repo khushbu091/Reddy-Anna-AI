@@ -33,7 +33,7 @@ const AdminDashboard = () => {
             <nav>
               <ul>
                 <li>Admin Dashboard</li>
-                <li>Add Card Form</li>
+                <li><Link to="/cardForm">Add Card Form</Link></li>
                 <li>Add Slider Form</li>
               </ul>
             </nav>

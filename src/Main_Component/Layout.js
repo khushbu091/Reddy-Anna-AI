@@ -5,7 +5,7 @@ import SocialShare from "./SocialShare";
 
 const Layout = () => {
     const location = useLocation();
-    const hideNavAndFooter = location.pathname === "/login" || location.pathname === "/admin"; 
+    const hideNavAndFooter = location.pathname === "/login" || location.pathname === "/admin" || location.pathname === "/cardForm"; 
 
 
     return (

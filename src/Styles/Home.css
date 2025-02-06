@@ -252,7 +252,7 @@ body{
     height: auto;
 
 }
-.cart-container {
+.home-cart-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +263,7 @@ body{
     margin-bottom: 30px;
   }
   
-  .card {
+  .home-card {
     padding: 20px 20px;
     border-radius: 10px;
     max-width: 550px;
