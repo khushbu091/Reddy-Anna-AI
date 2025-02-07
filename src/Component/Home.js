@@ -1,11 +1,13 @@
 import "../Styles/Home.css";
-import Slider from 'react-slick';
+import { useState, useEffect } from "react";
+import axios from "axios";
+// import Slider from 'react-slick';
 
-import ss1 from "../Image/up1.jpg";
-import s2 from "../Image/up2.avif";
-import s3 from "../Image/b8.avif";
-import s4 from "../Image/b1.jpg";
-import s5 from "../Image/b6.jpg";
+// import ss1 from "../Image/up1.jpg";
+// import s2 from "../Image/up2.avif";
+// import s3 from "../Image/b8.avif";
+// import s4 from "../Image/b1.jpg";
+// import s5 from "../Image/b6.jpg";
 
 import home_img from "../Image/homeImg.png";
 import logoImg from "../Image/reddy-anna-logo.png";
@@ -15,23 +17,38 @@ import so_img from "../Image/s0.png";
 
 
 const Home =()=>{
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 200,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true,
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 200,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   arrows: true,
+  // };
+  const [sliders, setSliders] = useState([]);
+
+  useEffect(() => {
+    fetchSliders();
+  }, []);
+
+  const fetchSliders = async () => {
+    try {
+      const response = await axios.get("http://localhost:5000/sliders");
+      setSliders(response.data);
+    } catch (error) {
+      console.error("Error fetching sliders:", error);
+    }
   };
-  
+
+
     return(
         <>
         
       <div className="container">
       
-      <div className="slider-container">
+      {/* <div className="slider-container">
       <Slider {...settings}>
         <div>
           <img src={ss1} alt="Slide 1" className="slider-image" />
@@ -50,9 +67,18 @@ const Home =()=>{
           <img src={s5} alt="Slide 5" className="slider-image" />
         </div>
       </Slider>
+    </div> */}
+
+<div className="home-slider">
+      <h2>Image Slider</h2>
+      <div className="slider-container">
+        {sliders.map((slide) => (
+          <div key={slide.id} className="slider-item">
+          <img src={slide.url || slide.image} alt="Slide" className="slider-img" />          </div>
+        ))}
+      </div>
     </div>
 
-     
         {/* ---------------------- welcome section --------------------------- */}
         <div className="welcome-container">
             <div className="welcome-img">

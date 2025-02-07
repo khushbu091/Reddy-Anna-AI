@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -24,6 +23,7 @@ import AdminDashboard from "./AdminPannel/AdminDashboard";
 import Login from "./AdminPannel/Login";
 import ProtectedRoute from "./AdminPannel/ProtectedRoute";
 import CardForm from "./AdminPannel/CardForm";
+import SliderForm from "./AdminPannel/SliderForm";
 
 
 const App =()=>{
@@ -57,6 +57,8 @@ const App =()=>{
                 <AdminDashboard />
               </ProtectedRoute>}/>
               <Route path="/cardForm" element={<CardForm />} />
+              <Route path="/sliderForm" element={<SliderForm />} />
+
 
           
           </Route>

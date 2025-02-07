@@ -1,0 +1,49 @@
+.slider-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.slider-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.slider-input {
+  margin-bottom: 10px;
+}
+
+.slider-button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: green;
+  color: white;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.slider-list {
+  list-style: none;
+  padding: 0;
+}
+
+.slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.slider-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
