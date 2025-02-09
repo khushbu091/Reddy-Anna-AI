@@ -12,13 +12,28 @@ const CardForm = () => {
       setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleImageChange = (e) => {
+    const handleImageChange = async (e) => {
       const file = e.target.files[0];
       if (file) {
-        // Preview image (if needed) or store the file URL
-        const imageUrl = URL.createObjectURL(file);
-        setImage(imageUrl); // Store image for preview or uploading
-        setFormData({ ...formData, imageUrl: imageUrl }); // Set the form data image URL (can be used in submission)
+        const imgData = new FormData();
+        imgData.append("image", file);
+
+        try {
+          const response = await fetch("http://localhost:5000/upload", {
+            method: "POST",
+            body: imgData,
+          });
+
+          const data = await response.json();
+          console.log("Upload Response:", data); // ✅ Debugging
+
+          if (data.imageUrl) {
+            setFormData({ ...formData, imageUrl: data.imageUrl });
+            setImage(data.imageUrl);
+          }
+        } catch (error) {
+          console.error("Error uploading image:", error);
+        }
       }
     };
 
@@ -31,13 +46,13 @@ const CardForm = () => {
         addCard(formData);
       }
       setFormData({ title: "", description: "", imageUrl: "", buttonText: "" });
-      setImage(null); // Reset the image after submitting
+      setImage(null);
     };
 
     const handleEdit = (card) => {
       setFormData(card);
       setEditingId(card.id);
-      setImage(card.imageUrl); // For editing, also show the current image
+      setImage(card.imageUrl);
     };
 
     return (
@@ -48,9 +63,7 @@ const CardForm = () => {
           <input name="title" value={formData.title} onChange={handleChange} placeholder="Title" required />
           <textarea name="description" value={formData.description} onChange={handleChange} placeholder="Description" required />
           
-          {/* File input for image upload */}
           <input type="file" onChange={handleImageChange} accept="image/*" />
-          
           {image && <img src={image} alt="Preview" style={{ width: 100, height: 100, objectFit: "cover" }} />}
           
           <input name="buttonText" value={formData.buttonText} onChange={handleChange} placeholder="Button Text" required />

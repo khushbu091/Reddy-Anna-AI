@@ -2,26 +2,30 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const CardContext = createContext();
 
-export const useCards = () => useContext(CardContext);
+export const useCards = () => {
+  return useContext(CardContext);
+};
 
 export const CardProvider = ({ children }) => {
-  const [cards, setCards] = useState(() => {
-    const savedCards = localStorage.getItem("cards");
-    return savedCards ? JSON.parse(savedCards) : [];
-  });
+  const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    localStorage.setItem("cards", JSON.stringify(cards));
-  }, [cards]);
+    fetch("http://localhost:5000/cards")
+      .then((res) => res.json())
+      .then((data) => setCards(data))
+      .catch((err) => console.error("Error fetching cards:", err));
+  }, []);
 
-  const addCard = (card) => setCards([...cards, { id: Date.now(), ...card }]);
-  
+  const addCard = (card) => {
+    setCards((prevCards) => [...prevCards, { ...card, id: Date.now().toString() }]);
+  };
+
   const updateCard = (id, updatedCard) => {
-    setCards(cards.map((card) => (card.id === id ? updatedCard : card)));
+    setCards((prevCards) => prevCards.map((card) => (card.id === id ? updatedCard : card)));
   };
 
   const deleteCard = (id) => {
-    setCards(cards.filter((card) => card.id !== id));
+    setCards((prevCards) => prevCards.filter((card) => card.id !== id));
   };
 
   return (

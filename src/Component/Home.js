@@ -71,10 +71,10 @@ const Home =()=>{
 
 <div className="home-slider">
       <h2>Image Slider</h2>
-      <div className="slider-container">
+      <div className="home-slider-container">
         {sliders.map((slide) => (
-          <div key={slide.id} className="slider-item">
-          <img src={slide.url || slide.image} alt="Slide" className="slider-img" />          </div>
+          <div key={slide.id} className="home-slider-item">
+          <img src={slide.url || slide.image} alt="Slide" className="home-slider-img" />          </div>
         ))}
       </div>
     </div>

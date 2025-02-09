@@ -52,26 +52,30 @@ body{
 
 
 .home-slider {
+  max-width: 1300px;
+  margin: auto;
+  background-color: #fff;
   text-align: center;
   padding: 20px;
 }
 
-.slider-container {
+.home-slider-container {
   display: flex;
   overflow-x: auto;
   gap: 10px;
   padding: 10px;
 }
 
-.slider-item {
-  min-width: 300px;
+.home-slider-item {
+  max-width: 1300px;
+  height: auto;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.slider-img {
-  width: 100%;
-  height: auto;
+.home-slider-img {
+  max-width: 1200px;
+  height: 300px;
   border-radius: 8px;
 }
 
