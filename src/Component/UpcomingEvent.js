@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCards } from "../AdminPannel/CardContext";
 import "../Styles/UpcomingEvent.css";
+// import CardForm from "../AdminPannel/CardForm";
 
 const UpcomingEvent = () => {
   const { cards } = useCards();
@@ -13,11 +14,7 @@ const UpcomingEvent = () => {
           {cards.map((card) => (
             <div key={card.id} className="custom-card">
               <div className="card-image">
-                <img
-                  src={card.imageUrl ? card.imageUrl : ""}
-                  alt={card.title}
-                  className="card-img"
-                />
+                <img src={card.imageUrl} alt={card.title} className="card-img" />
               </div>
               <div className="card-content">
                 <h2 className="card-title">{card.title}</h2>

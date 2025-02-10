@@ -1,10 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 const CardContext = createContext();
-
-export const useCards = () => {
-  return useContext(CardContext);
-};
 
 export const CardProvider = ({ children }) => {
   const [cards, setCards] = useState([]);
@@ -12,25 +8,17 @@ export const CardProvider = ({ children }) => {
   useEffect(() => {
     fetch("http://localhost:5000/cards")
       .then((res) => res.json())
-      .then((data) => setCards(data))
-      .catch((err) => console.error("Error fetching cards:", err));
+      .then((data) => setCards(data));
   }, []);
 
-  const addCard = (card) => {
-    setCards((prevCards) => [...prevCards, { ...card, id: Date.now().toString() }]);
+  const addCard = (card) => setCards([...cards, card]);
+  const updateCard = (id, updatedCard) => setCards(cards.map((card) => (card.id === id ? updatedCard : card)));
+  const deleteCard = async (id) => {
+    await fetch(`http://localhost:5000/cards/${id}`, { method: "DELETE" });
+    setCards(cards.filter((card) => card.id !== id));
   };
 
-  const updateCard = (id, updatedCard) => {
-    setCards((prevCards) => prevCards.map((card) => (card.id === id ? updatedCard : card)));
-  };
-
-  const deleteCard = (id) => {
-    setCards((prevCards) => prevCards.filter((card) => card.id !== id));
-  };
-
-  return (
-    <CardContext.Provider value={{ cards, addCard, updateCard, deleteCard }}>
-      {children}
-    </CardContext.Provider>
-  );
+  return <CardContext.Provider value={{ cards, addCard, updateCard, deleteCard }}>{children}</CardContext.Provider>;
 };
+
+export const useCards = () => useContext(CardContext);
