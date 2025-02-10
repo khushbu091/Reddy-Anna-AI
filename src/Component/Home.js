@@ -1,6 +1,12 @@
 import "../Styles/Home.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// Ensure styles are properly applied
 // import Slider from 'react-slick';
 
 // import ss1 from "../Image/up1.jpg";
@@ -70,13 +76,22 @@ const Home =()=>{
     </div> */}
 
 <div className="home-slider">
-      <h2>Image Slider</h2>
-      <div className="home-slider-container">
+     
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="home-slider-container"
+      >
         {sliders.map((slide) => (
-          <div key={slide.id} className="home-slider-item">
-          <img src={slide.url || slide.image} alt="Slide" className="home-slider-img" />          </div>
+          <SwiperSlide key={slide.id}>
+            <img src={slide.url || slide.image} alt="Slide" className="home-slider-img" />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
 
         {/* ---------------------- welcome section --------------------------- */}
