@@ -6,14 +6,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-// Ensure styles are properly applied
-// import Slider from 'react-slick';
-
-// import ss1 from "../Image/up1.jpg";
-// import s2 from "../Image/up2.avif";
-// import s3 from "../Image/b8.avif";
-// import s4 from "../Image/b1.jpg";
-// import s5 from "../Image/b6.jpg";
 
 import home_img from "../Image/homeImg.png";
 import logoImg from "../Image/reddy-anna-logo.png";
@@ -23,16 +15,7 @@ import so_img from "../Image/s0.png";
 
 
 const Home =()=>{
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 200,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   arrows: true,
-  // };
+
   const [sliders, setSliders] = useState([]);
 
   useEffect(() => {
@@ -53,46 +36,23 @@ const Home =()=>{
         <>
         
       <div className="container">
-      
-      {/* <div className="slider-container">
-      <Slider {...settings}>
-        <div>
-          <img src={ss1} alt="Slide 1" className="slider-image" />
-        </div>
-        <div>
-          <img src={s2} alt="Slide 2" className="slider-image" />
-        </div>
-        <div>
-          <img src={s3} alt="Slide 3" className="slider-image" />
-        </div>
-        <div>
-          <img src={s4} alt="Slide 4" className="slider-image" />
-        </div>
-
-        <div>
-          <img src={s5} alt="Slide 5" className="slider-image" />
-        </div>
-      </Slider>
-    </div> */}
-
-<div className="home-slider">
-     
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="home-slider-container"
-      >
-        {sliders.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <img src={slide.url || slide.image} alt="Slide" className="home-slider-img" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+      <div className="home-slider">   
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="home-slider-container"
+        >
+          {sliders.map((slide) => (
+            <SwiperSlide key={slide.id}>
+              <img src={slide.url || slide.image} alt="Slide" className="home-slider-img" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
         {/* ---------------------- welcome section --------------------------- */}
         <div className="welcome-container">

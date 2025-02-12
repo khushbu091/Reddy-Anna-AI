@@ -11,11 +11,9 @@ body{
     margin-top: 2px;
     background-color: #000;
 }
-
-
 .home-slider {
-  width: 1300px;
-  max-width: 100%;
+  max-width: 1300px;
+  /* max-width: 100%; */
   margin: auto;
   
   text-align: center;
@@ -65,8 +63,6 @@ body{
     height: 450px;
   }
 }
-
-
 
 .welcome-container {
     display: flex;
