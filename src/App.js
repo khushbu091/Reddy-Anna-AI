@@ -56,11 +56,8 @@ const App =()=>{
               <ProtectedRoute>
                 <AdminDashboard />
               </ProtectedRoute>}/>
-              <Route path="/cardForm" element={<CardForm />} />
-              <Route path="/sliderForm" element={<SliderForm />} />
-
-
-          
+              <Route path="/admin/cardForm" element={<CardForm />} />
+              <Route path="/admin/sliderForm" element={<SliderForm />} />          
           </Route>
         </Routes>
       </BrowserRouter>

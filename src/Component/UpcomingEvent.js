@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useCards } from "../AdminPannel/CardContext";
 import "../Styles/UpcomingEvent.css";
-// import CardForm from "../AdminPannel/CardForm";
 
 const UpcomingEvent = () => {
   const { cards } = useCards();
