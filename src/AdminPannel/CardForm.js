@@ -54,7 +54,7 @@ const CardForm = ({ selectedCard, clearSelection }) => {
   };
 
   return (
-    <div className="container">
+    <>
       <form onSubmit={handleSubmit} className="card-form">
         <input type="text" name="title" value={formData.title} onChange={handleChange} placeholder="Title" required />
         <input type="text" name="description" value={formData.description} onChange={handleChange} placeholder="Description" required />
@@ -63,7 +63,6 @@ const CardForm = ({ selectedCard, clearSelection }) => {
         {selectedCard && <button type="button" onClick={clearSelection}>Cancel</button>}
       </form>
 
-      {/* Display added cards with edit & delete options */}
       <div className="card-list">
         {cards.map((card) => (
           <div key={card.id} className="custom-card">
@@ -74,8 +73,9 @@ const CardForm = ({ selectedCard, clearSelection }) => {
             <button onClick={() => deleteCard(card.id)}>Delete</button>
           </div>
         ))}
-      </div>
+     
     </div>
+    </>
   );
 };
 

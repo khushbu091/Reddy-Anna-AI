@@ -24,7 +24,7 @@ const SliderForm = () => {
     const file = event.target.files[0];
     if (file) {
       setSelectedFile(file);
-      setPreview(URL.createObjectURL(file)); // सिर्फ Preview के लिए
+      setPreview(URL.createObjectURL(file)); 
     }
   };
 

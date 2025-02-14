@@ -18,50 +18,55 @@ import OfferAndBonus from "./Sub_components/Offer&bonus";
 import OnlinePlatforms from "./Sub_components/OnlinePlatforms";
 import Promotions from "./Sub_components/Promotions";
 import Sports from "./Sub_components/Sport";
-// ---------------------- Admin Pannel Data-----------------------------
+
+// ✅ Admin Panel
+import AdminLayout from "./AdminPannel/AdminLayout";
 import AdminDashboard from "./AdminPannel/AdminDashboard";
 import Login from "./AdminPannel/Login";
 import ProtectedRoute from "./AdminPannel/ProtectedRoute";
 import CardForm from "./AdminPannel/CardForm";
 import SliderForm from "./AdminPannel/SliderForm";
 
-
-const App =()=>{
+const App = () => {
   return (
-    <>
+    <BrowserRouter>
+      <Routes>
+        {/* ✅ Normal Website Pages */}
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="home" element={<Home/>}/>
+          <Route path="privacyPolicy" element={<Privacy_Policy/>}/>
+          <Route path="reddyNews" element={<Reddy_News/>}/>
+          <Route path="upcomingEvent" element={<UpcomingEvents/>}/>
+          <Route path="bettingTips" element={<Betting_Tips/>}/>
+          <Route path="Tips&Tricks" element={<Betting_Tips_Tricks/>}/>
+          <Route path="casinoGames" element={<CasinoGames/>}/>
+          <Route path="cricketBetting" element={<CricketBetting/>}/>
+          <Route path="online_betting" element={<OnlineBetting/>}/>
+          <Route path="legal&safety" element={<LegalAndSafety/>}/>
+          <Route path="liveMatch" element={<LiveMatch/>}/>
+          <Route path="offer&bonus" element={<OfferAndBonus/>}/>
+          <Route path="onlinePlatform" element={<OnlinePlatforms/>}/>
+          <Route path="promotions" element={<Promotions/>}/>
+          <Route path="sport" element={<Sports/>}/>
+        </Route>
 
-      <BrowserRouter>
-        <Routes>
-              <Route path="/" element={<Layout/>}>
-              <Route path="/" element={<Home/>}/>
-              <Route path="home" element={<Home/>}/>
-              <Route path="privacyPolicy" element={<Privacy_Policy/>}/>
-              <Route path="reddyNews" element={<Reddy_News/>}/>
-              <Route path="upcomingEvent" element={<UpcomingEvents/>}/>
-              <Route path="bettingTips" element={<Betting_Tips/>}/>
-              <Route path="Tips&Tricks" element={<Betting_Tips_Tricks/>}/>
-              <Route path="casinoGames" element={<CasinoGames/>}/>
-              <Route path="cricketBetting" element={<CricketBetting/>}/>
-              <Route path="online_betting" element={<OnlineBetting/>}/>
-              <Route path="legal&safety" element={<LegalAndSafety/>}/>
-              <Route path="liveMatch" element={<LiveMatch/>}/>
-              <Route path="offer&bonus" element={<OfferAndBonus/>}/>
-              <Route path="onlinePlatform" element={<OnlinePlatforms/>}/>
-              <Route path="promotions" element={<Promotions/>}/>
-              <Route path="sport" element={<Sports/>}/>
-{/* -------------------------Admin Data -------------------------------- */}
+        {/* ✅ Login Page */}
+        <Route path="/login" element={<Login />} />
 
-              <Route path="/login" element={<Login />} />
-              <Route path="/admin" element={
-              <ProtectedRoute>
-                <AdminDashboard />
-              </ProtectedRoute>}/>
-              <Route path="/admin/cardForm" element={<CardForm />} />
-              <Route path="/admin/sliderForm" element={<SliderForm />} />          
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </>
+        {/* ✅ Admin Panel Pages (Sidebar + Navbar Fixed) */}
+        <Route path="/admin" element={
+          <ProtectedRoute>
+            <AdminLayout />
+          </ProtectedRoute>
+        }>
+          <Route index element={<AdminDashboard />} />
+          <Route path="cardForm" element={<CardForm />} />
+          <Route path="sliderForm" element={<SliderForm />} />
+        </Route>
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

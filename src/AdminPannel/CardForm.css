@@ -5,14 +5,14 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   width: 400px;
-  max-width: 90%;
+  max-width: 95%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .card-form input {
-  width: 100%;
+  width: 98%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -32,7 +32,7 @@
   background: orange;
 }
 
-/* 📌 Responsive Design */
+
 @media (max-width: 768px) {
   .card-form {
     width: 100%;
@@ -83,7 +83,6 @@ button:hover {
   background: orange;
 }
 
-/* 📌 Responsive Design */
 @media (max-width: 768px) {
   .card-list {
     flex-direction: column;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "./Auth";
-import "../AdminPannel/Styles.css";
+import "../AdminPannel/Login.css";
 
 
 
